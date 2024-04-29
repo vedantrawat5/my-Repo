@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root{
+    --lighting-color: #0098b7;
+    --dark-color: #003d62;
+    --darker-color:#003251;
+    --secondary-color:#fff700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+html{
+    font-size: 62.5%;
+}
+body,html{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300; 
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: white;
+}
+body{
+    font-size: 1.4rem;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li{
+    list-style-type: none;
+}
+header{
+    background-color: var(--lighting-color);
+}
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+nav li{
+    font-size: 1.8rem;
+    border-bottom: 0.4rem solid transparent;
+    transition: 0.3s ease-in-out;
+}
+nav li:hover{
+    border-bottom: 0.4rem solid  var(--secondary-color) ;
+    transition: 0.3s ease-in-out;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* Hero Section */
+#hero{
+    background: var(--dark-color);
+    padding: 4rem 0;
+    border-bottom: 4px solid var(--lighting-color);
+}
+#hero .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero_content{
+    display: grid;
+    place-items:center;
+}
+#hero h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hi_text{
+    color: var(--secondary-color);
+    font-size: 6rem;
+    font-weight: bold;
+}
+.name_text{
+    font-size: 5rem;
+}
+#hero h2{
+    font-size: 4rem;
+    font-weight: bold;    
+}
+
+/* Project section */
+#project{
+    background: var(--darker-color);
+}
+#project h2{
+    font-size: 6rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+.grid_items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    place-items: center;
+}
+.card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.card_content{
+    padding: 2rem;
+    position: relative;
+    border: 1px solid white;
+}
+.card_content h3{
+    text-align: center;
+}
+/* Contact Section */
+#contact{
+    background: var(--dark-color);
+}
+#contact h2{
+    text-align: center;
+    font-size: 6rem;
+    padding: 2rem 0;
+}
+
+#contact .container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+}
+.top_contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    margin: 0 auto;
+    max-width: 800px;
+}
+.contact-way{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding:0 25px;
+}
+.contact-way i{
+    font-size: 3rem;
+}
+.contact-way h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.bottom_contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    margin: 0 auto;
+    max-width: 400px;
+}
+/* Footer Section */
+footer{
+    background: var(--darker-color);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+/* Media Query */
+@media(max-width:786px){
+    html{
+        font-size: 40%;
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: grid;
+        place-items: center;
+    }
+    .hero_image img{
+        display: grid;
+        place-items: center;
+    }
+    #contact .container{
+        height: 70vh;
+    }
+}
+
+@media(max-width:500px){
+    html{
+        font-size: 32%;
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: grid;
+        place-items: center;
+    }
+    .hero_image img{
+        display: grid;
+        place-items: center;
+       
+    }
+    #contact .container{
+        height: 70vh;
+    }
+}
+
