@@ -15,8 +15,6 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/vedantrawat5](https://github.com/vedantrawat5)
 
-- 💭 I am passionate about [Automobiles and captivated by cutting-edge technology](Automobiles and captivated by cutting-edge technology)
-
 - 💬 Ask me about **HTML, CSS , Javascript , Github**
 
 - 📫 How to reach me **vedantrawat5@gmail.com**
