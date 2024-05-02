@@ -1,72 +1,47 @@
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;   
-}
-html,body{
-    font-family: monospace ,sans-serif;
-}
-.background{
-    background-image: url("Imgs/mountain.jpg");
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .container{
-    display: grid;
-    place-items: center;
+    width: 95%;
     height: 100vh;
-}
-.container h1{
-    font-size: 4rem;
-    text-align: center;
-}
-.settings{
-    position: absolute;
-    display: flex;
-    bottom: 30px;
-    right: 20px;
-    align-items: center;
-    gap: 1.5rem;
-}
-.settings .fa-cog{
-    font-size: 3rem;
-    color: white;
-}
-.content-settings{
-    display: flex;
-    gap: 1rem;
-}
-.content-settings input{
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-}
-.content-settings button{
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    background: darkgreen;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    color: white;
-}
-.hide{
-    display: none;
-}
-.time-container{
-    margin-top: 1rem;
-    display: flex;
-    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
-.time-container h2{
+.hex-colors{
     text-align: center;
-    font-size: 3rem;
-    line-height: 1.45;
 }
-.time-container div{
-    font-size: 4rem;
-    color: white;
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changeColor 7.25s infinite alternate;
+}
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+}
+/* @keyframes changeColor{
+    0%{
+        color:indigo ;
+    }
+    20%{
+        color:blue ;
+    }
+    40%{
+        color:greenyellow ;
+    }
+    60%{
+        color:orangered ;
+    }
+    80%{
+        color:palevioletred ;
+    }
+    100%{
+        color:navajowhite ;
+    }
+} */
+
+@media(max-width:480px){
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
 }
