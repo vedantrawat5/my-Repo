@@ -2,11 +2,9 @@
 
 <h1 align="center">Hi 👋, I'm Vedant Rawat from Delhi, India</h1>
 <h3 align="center">As a digital marketing enthusiast, I'm continuously expanding my knowledge and skills in this dynamic field. Eager to learn more, I embrace every opportunity to delve deeper into the intricacies of online strategies, analytics, and emerging trends, fueling my passion for innovation.</h3>
-<img align="right" alt="Coding" width="400" src="https://cdn.wallpapersafari.com/52/69/ZAoguz.png">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vedantrawat5&label=Profile%20views&color=0e75b6&style=flat" alt="vedantrawat5" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vedantrawat5" alt="vedantrawat5" /></a> </p>
 
 - 🔭 I’m currently exploring **new frameworks**
 
