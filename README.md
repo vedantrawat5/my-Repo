@@ -1,4 +1,4 @@
-[![MasterHead]<My GitHub Profile>]<https://github.com/vedantrawat5>
+[![MasterHead] <My GitHub Profile>]<https://github.com/vedantrawat5>
 
 <h1 align="center">Hi 👋, I'm Vedant Rawat from Delhi, India</h1>
 <h3 align="center">As a digital marketing enthusiast, I'm continuously expanding my knowledge and skills in this dynamic field. Eager to learn more, I embrace every opportunity to delve deeper into the intricacies of online strategies, analytics, and emerging trends, fueling my passion for innovation.</h3>
@@ -6,7 +6,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vedantrawat5&label=Profile%20views&color=0e75b6&style=flat" alt="vedantrawat5" /> </p>
 
 
-- 🔭 I’m currently exploring **new frameworks**
+- 🔭 I’m currently exploring **new frameworks & libraries**
 
 - 🌱 I’m currently learning **Digital Marketing from National Council of YMCA, India**
 
@@ -20,7 +20,7 @@
 
 - 📫 How to reach me **vedantrawat5@gmail.com**
 
-- ⚡ Fun fact **More sarcastic than you can imagine**
+- ⚡ Fun fact **More sarcastic than think**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
