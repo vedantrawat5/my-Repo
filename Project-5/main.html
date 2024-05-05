@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restruant</title>
+    <script src="https://kit.fontawesome.com/36a4c2bd40.js" crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            line-height: 1.4;
+            font-weight: 300;
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Button */
+
+        button {
+            padding: 10px 15px;
+            border: 1px solid black;
+            transition: 0.2s ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.8;
+            transition: 0.2s ease-in-out;
+        }
+
+        /* Navigation */
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 2010px;
+            margin: 0 auto;
+        }
+
+        nav {
+            box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+            position: sticky;
+            background: #fff;
+            top: 0;
+            margin-bottom: 32px;
+            padding: 10px;
+        }
+
+        .bar_icon {
+            font-size: 32px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero_content {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .tag {
+            background: #149f39;
+            padding: 5px 10px;
+            color: white;
+            align-self: flex-start;
+        }
+
+        .hero_content h1 {
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 1.125;
+        }
+
+        .explore_bttn {
+            background: #ffc066;
+            align-self: flex-start;
+        }
+
+        /* Features Section  */
+
+        .features {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            gap: 20px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            transition: 0.2s ease-in-out;
+        }
+
+        .feature img {
+            width: 72px;
+        }
+
+        .feature:hover {
+            transition: 0.2s ease-in-out;
+            box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+        }
+
+        .divider {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* Menu Section */
+        .menu {
+            display: flex;
+            flex-direction: column;
+            margin: 50px 0;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .menu .tag {
+            align-self: center;
+        }
+
+
+        .grid-img {
+            border-radius: 10px;
+            transition: 0.2s ease-in-out;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .grid-img:hover {
+            transform: scale(1.05);
+            transition: 0.2s ease-in-out;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-areas:
+                "I1 I1 I2 I3"
+                "I1 I1 I2 I7"
+                "I4 I5 I6 I7";
+            gap: 10px;
+
+
+        }
+
+        .item-1 {
+            grid-area: I1;
+        }
+
+        .item-2 {
+            grid-area: I2;
+        }
+
+        .item-3 {
+            grid-area: I3;
+        }
+
+        .item-4 {
+            grid-area: I4;
+        }
+
+        .item-4 {
+            grid-area: I5;
+        }
+
+        .item-6 {
+            grid-area: I6;
+        }
+
+        .item-7 {
+            grid-area: I7;
+        }
+
+
+        /* Media Queries */
+        @media(max-width:786px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .hero_image {
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero_image img {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .hero_content {
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .hero_content h1 {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+
+            .features {
+                flex-direction: column;
+            }
+
+            .grid {
+                padding: 10px;
+            }
+
+            .grid-img {
+                border-radius: 0px;
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background: #fff0db;
+        }
+
+        .link_lists h3 {
+            margin-bottom: 10px;
+            color: grey;
+        }
+
+
+        .link_lists ul {
+            list-style: none;
+        }
+
+        .link_lists ul li {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .news_letter input {
+            padding: 5px 40px;
+            margin-bottom: 10px;
+        }
+
+        .news_letter h3 {
+            margin-bottom: 10px;
+            color: grey;
+        }
+
+        .icon_container {
+            display: flex;
+            gap: 15px;
+            font-size: 24px;
+        }
+
+        .footer_container {
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navigation container">
+            <div class="logo_container">
+                <img src="icons/logo.png" alt="logo">
+            </div>
+            <div class="bar_icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="second_container">
+        <div class="hero">
+            <div class="hero_image">
+                <img src="imgs/hero_image.png" alt="hero_image">
+            </div>
+            <div class="hero_content">
+                <div class="tag">50% Off on All Products</div>
+                <br>
+                <h1>Enjoy Your <br>Delicious Food!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <br>
+                    Temporibus pariatur quibusdam repellat voluptatibus odit
+                </p>
+                <br>
+                <button class="explore_bttn">
+                    Explore Now
+                </button>
+            </div>
+        </div>
+
+        <section class="features">
+            <div class="feature">
+                <img src="icons/discount.png" alt="discount">
+                <div class="feature_content">
+                    <h3>Discount Voucher</h3>
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="feature">
+                <img src="icons/fresh.png" alt="discount">
+                <div class="feature_content">
+                    <h3>Fresh Healthy Food</h3>
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="feature">
+                <img src="icons/delivery.png" alt="discount">
+                <div class="feature_content">
+                    <h3>Fast Delivery</h3>
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <div class="menu">
+            <div class="tag">Our Menu</div>
+            <h2>Explore Our Menu</h2>
+            <div class="grid">
+                <div class="item-1">
+                    <img src="imgs/grid_image1.png" class="grid-img" alt="img 1">
+                </div>
+                <div class="item-2">
+                    <img src="imgs/grid_image2.png" class="grid-img" alt="img 2">
+                </div>
+                <div class="item-3">
+                    <img src="imgs/grid_image3.png" class="grid-img" alt="img 3">
+                </div>
+                <div class="item-4">
+                    <img src="imgs/grid_image4.png" class="grid-img" alt="img 4">
+                </div>
+                <div class="item-5">
+                    <img src="imgs/grid_image5.png" class="grid-img" alt="img 5">
+                </div>
+                <div class="item-6">
+                    <img src="imgs/grid_image6.png" class="grid-img" alt="img 6">
+                </div>
+                <div class="item-7">
+                    <img src="imgs/grid_image7.png" class="grid-img" alt="img 7">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer_container container ">
+            <div class="footer_logo">
+                <img src="icons/logo.png" alt="logo">
+            </div>
+            <div class="link_lists">
+                <h3>Main Links</h3>
+                <ul>
+                    <li>Order Tracking</li>
+                    <li>New Order</li>
+                    <li>Contact Us</li>
+                    <li>News & Blogs</li>
+                </ul>
+            </div>
+            <div class="link_lists">
+                <h3>Support</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy & Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="news_letter">
+                <h3>Support</h3>
+                <input type="email" placeholder="Enter Your Email...">
+                <h3>Follow Us</h3>
+                <div class="icon_container">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

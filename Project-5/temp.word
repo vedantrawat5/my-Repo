@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myWebsite</title>
+    <style>
+        /* Universal */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body */
+        body {
+            background: #BC544B;
+        }
+
+
+        /* Navbar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            margin-bottom: 10px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #ea1313;
+            grid-template-columns: 200px 100px;
+        }
+
+
+        /* Grid */
+        .container {
+
+            display: grid;
+            grid-template-columns: 75vh 75vh;
+            height: 100vw;
+            gap: 5px;
+            border: 5px solid yellow;
+
+        }
+
+        /* This is the main box */
+        .box {
+            margin: 0;
+            padding: 0;
+            border: 5px solid blue;
+        }
+
+        /* This is box 1 */
+
+        #box1 {
+            background-color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-image: url("f.jpg");
+            background-repeat: cover;
+            background-position: center;
+            background-size: cover;
+            height: 30vh;
+        }
+
+
+
+        /* This is box 2 */
+        #box2 {
+            border: 5px solid black;
+            background-color: white;
+        }
+
+        #box2 p {
+            border: 1px solid black;
+            line-height: 25px;
+        }
+
+        #box2 h2 {
+            border: 1px solid black;
+            margin-top: 35px;
+        }
+
+        #box2 h3 {
+            border: 1px solid black;
+            margin-top: 35px;
+        }
+
+        /* This is box 3 */
+
+        #box3 {
+            background-color: white;
+            border: 5px solid black;
+        }
+
+        #box3 p {
+            line-height: 25px;
+            padding-left: 5px;
+        }
+
+        #box3 h3 {
+            margin-top: 35px;
+        }
+
+        .photo-one img {
+
+            padding: 7px 11px 5px;
+            float: inline-start;
+            width: 130px;
+            height: 126px;
+        }
+
+        .photo-two img {
+            padding: 7px 12px 5px;
+            float: inline-start;
+            width: 130px;
+            height: 215px;
+        }
+
+
+        /* This is box 4 */
+
+        #box4 {
+            border: 5px solid black;
+            background-color: white;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        #box4 p {
+            border: 1px solid black;
+            line-height: 25px;
+        }
+
+        #box4 h2 {
+
+            border: 1px solid black;
+            margin-top: 35px;
+        }
+
+        #box4 h3 {
+            border: 1px solid black;
+            margin-top: 35px;
+        }
+
+        /* This is box 5 */
+        #box5 {
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        #box5 ul {
+            line-height: 45px;
+            display: flex;
+            padding-left: 5px;
+            flex-direction: column;
+        }
+
+        #box5 h3 {
+            border: 1px solid black;
+            margin-top: 35px;
+        }
+
+        /* This is box 6 */
+
+        #box6 {
+
+            background-color: white;
+            border: 5px solid black;
+        }
+
+        #box6 ul {
+            margin-top: 15px;
+            line-height: 45px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+
+        #box6 h3 {
+            margin-top: 35px;
+            border: 1px solid black;
+        }
+
+        #box5 ul {
+            border: 1px solid black;
+            background: none;
+            text-align: left;
+        }
+
+        #box5 li {
+            border: 1px solid black;
+            background: none;
+            text-align: left;
+        }
+
+        #box6 ul {
+            border: 1px solid black;
+            background: none;
+            text-align: left;
+        }
+
+        #box6 li {
+            border: 1px solid black;
+            background: none;
+            justify-content: left;
+        }
+
+        /* This is iFrame */
+
+        iframe {
+            height: 30vw;
+            border: 3px solid blue;
+            width: 30vw;
+        }
+
+        p {
+            padding: 4px 10px;
+        }
+
+        /* This is first box */
+        .container-main {
+            display: flex;
+            gap: 5px;
+            border: 1px solid black;
+            padding: 7px 8px;
+            max-width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+        }
+
+        .img-container {
+            max-width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .one img {
+            position: relative;
+            top: 2vh;
+            float: left;
+            width: 5vw;
+            height: 10vh;
+            border: 1px solid black;
+
+        }
+
+        .two h3 {
+            border: 2px solid black;
+        }
+
+        .two p {
+            border: 2px solid black;
+        }
+
+        .content-two img {
+            border: 2px solid black;
+
+        }
+
+        .content-two h3 {
+            border: 2px solid black;
+        }
+
+        .content-two p {
+            border: 2px solid black;
+        }
+    </style>
+
+<body>
+    <nav>
+        <ul>
+            <img src="..." alt="" width="50px">
+            <div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box" id="box1">
+
+
+        </div>
+        <div class="box" id="box2">
+            <div class="heading">
+                <h2>News //</h2>
+            </div>
+            <h3>
+                I'm a title. ​Click here to edit me.
+            </h3>
+            <p>
+                July 12, 2035
+                I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a
+                story and let your users know a little more about you.
+                <hr>
+            </p>
+            <h3>
+                I'm a title. ​Click here to edit me.
+            </h3>
+            <p>
+                July 12, 2035
+                I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a
+                story and let your users know a little more about you.
+                <hr>
+            </p>
+            <h3>
+                I'm a title. ​Click here to edit me.
+            </h3>
+            <p>
+                July 12, 2035
+                I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a
+                story and let your users know a little more about you.
+                <hr>
+            </p>
+        </div>
+        <div class="box" id="box3">
+            <div class="container-main">
+                <div class="one">
+                    <img src="f.jpg" alt="xxx">
+                </div>
+                <div class="two">
+                    <h3>
+                        World Class Physicians
+                    </h3>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text"
+                        or
+                        double
+                        click me and you can start adding your own content and make changes to the font. I'm a great
+                        place
+                        for
+                        you
+                        to tell a story and let your users know a little more about you.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="content-two">
+                <div class="photo-two">
+                    <img src="f.jpg" alt="xxx">
+                </div>
+                <h3>
+                    Diagnostic Imaging
+                </h3>
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or
+                    double click me and you can start adding your own content and make changes to the f ont. I'm a great
+                    place f or you to tell a story and let your users know a little more about you.
+                </p>
+                <p>
+                    This is a great space to write long text about your company and your services. You can use this
+                    space to
+                    go into a little more detail about your company. Talk about your team and what services you provide.
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="box" id="box4">
+            <h2>Video//</h2>
+            <h3>Joint Replacement</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rLkd9Zqln9Q?si=6tDnz3hcJPt4HmM3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <h3>
+                I'm a title. ​Click here to edit me.
+
+            </h3>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story
+                and let your users know a little more about you.
+            </p>
+        </div>
+        <div class="box" id="box5">
+            <h3>
+                Sports Medicine & Arthroscopic Surgery
+                - Microfracture Technique
+            </h3>
+            <ul>
+                <li>- Utilizing the Newest Technology</li>
+                <li>- Patellofemoral Pain Syndrome</li>
+                <li>- All Shoulder Injuries</li>
+                <li>- Rotator Cuff/Impingement</li>
+            </ul>
+        </div>
+        <div class="box" id="box6">
+
+            <h3>
+
+                What You Need to Know
+                Before Choosing a Surgeon
+            </h3>
+            <ul>
+                <li>- Knowing the right questions to ask​</li>
+                <li>- When is the right time to have surgery​</li>
+                <li>- Exploring non-invasive alternatives</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+Notes:
+
+<div class="container">
+       
+        <footer>Footer</footer>
+    </div>
+
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            line-height: 1.5;
+            font-weight: 300;
+            font-family: Georgia, 'Times New Roman', Times, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            height: 100vw;
+            grid-template-columns: 100vh 100vh;
+            gap: 100px;
+        }
+
+        nav {
+            background: grey;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+
+
+
+         <!-- <div class="article-container2">
+                    <div class="img_area">
+                        <img src="pictures/spine.jpeg" alt="">
+                    </div>
+                    <div class="article-content">
+                        
+                    </div> -->
+                <!-- </div> -->
+
+new text
+
+  <div class="left-part">
+                    <div class="main-header">
+                    </div>
+                    <br>
+                    <div class="header">
+                        <h2>the Field in</h2>
+                    </div>
+                    <br>
+                    <div class="header_last-child">
+                        <h3>Automobiles</h3>
+                    </div>
+                </div>
+                <div class="tagline">
+                    <h4>
+                        # 1 in Spinal, Neck and Head Injuries
+                    </h4>
+                </div>
+            </div>
+
+
+            and its css
+
+ .main-content {
+            display: inline-block;
+            /* justify-content: space-between; */
+        }
+
+        .tagline {
+            color: white;
+            float: right;
+            position: absolute;
+        }
+
+        .tagline h4 {
+            color: white;
+            background: rgba(255, 255, 0255, 0.5);
+            padding: 2.5%;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .main-header {
+            color: white;
+            background: rgba(255, 255, 0255, 0.5);
+        }
+
+        .header_last-child {
+            color: white;
+            background: rgba(255, 255, 0255, 0.5);
+        }
+
+        .header {
+            color: white;
+            background: rgba(255, 255, 0255, 0.5);
+        }
+
+        .main-header h1 {
+            margin-top: 5vh;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            font-size: 5rem;
+        }
+
+        .header h2 {
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        .header_last-child h3 {
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            font-size: 1.5rem;
+            text-align: center;
+        }
