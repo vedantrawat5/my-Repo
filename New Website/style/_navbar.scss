@@ -1,0 +1,74 @@
+$main-color: #fe5b3d;
+$secondary-color: #ffac38;
+$text-color: #444;
+$gradient-color: linear-gradient($main-color, $secondary-color);
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eeeff1;
+  padding: 15px 100px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.navbar {
+  display: flex;
+  li {
+    position: relative;
+  }
+  a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: $text-color;
+    font-weight: 500;
+
+    // Hover Effect
+    &::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      background: $gradient-color;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transition: 0.5s;
+    }
+
+    // After Effect
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.header-btn {
+  a {
+    padding: 10px 20px;
+    color: $text-color;
+    font-weight: 500;
+  }
+  .sign-in {
+    background: navy;
+    color: white;
+    border-radius: 0.5rem;
+    &:hover {
+      background: $main-color;
+    }
+  }
+}
