@@ -1,0 +1,31 @@
+$main-color: #fe5b3d;
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(Car\ Website.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.text{
+    h1{
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+    span{
+        color: $main-color;
+    }
+    .p{
+        margin: 0.5rem 0 1rem;
+    }
+}
+
+.app-stores{
+    width: 100px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
