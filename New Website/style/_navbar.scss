@@ -1,7 +1,7 @@
 $main-color: #fe5b3d;
 $secondary-color: #ffac38;
 $text-color: #444;
-$gradient-color: linear-gradient($main-color, $secondary-color);
+$gradient: linear-gradient($main-color, $secondary-color);
 
 header {
   position: fixed;
@@ -36,7 +36,7 @@ header {
       content: "";
       width: 0;
       height: 3px;
-      background: $gradient-color;
+      background: $gradient;
       position: absolute;
       bottom: -4px;
       left: 0;
