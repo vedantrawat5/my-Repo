@@ -247,4 +247,31 @@ header {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  align-items: center;
+  gap: 1rem;
+}
+.about-container .about-img img {
+  width: 100%;
+}
+.about-container .about-text span {
+  font-weight: 500px;
+  color: #fe5b3d;
+}
+.about-container .about-text p {
+  margin: 0.5rem 0 1.4rem;
+}
+.about-container .about-text .btn {
+  padding: 10px 20px;
+  background: #474fa0;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.about-container .about-text .btn:hover {
+  background: #fe5b3d;
 }/*# sourceMappingURL=style.css.map */

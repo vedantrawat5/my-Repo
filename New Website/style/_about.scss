@@ -1,0 +1,35 @@
+$main-color: #fe5b3d;
+
+.about-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   margin-top:2rem ;
+   align-items: center;
+   gap: 1rem;
+   .about-img{
+        img{
+            width: 100%;
+        }
+   }
+   .about-text{
+        span{
+            font-weight: 500px;
+            color: $main-color;
+        }
+        p{
+            margin: 0.5rem 0 1.4rem;
+        }
+        .btn{
+            padding: 10px 20px;
+            background: #474fa0;
+            color: #fff;
+            border-radius: 0.5rem;
+            &:hover{
+                background: $main-color;
+            }
+
+        }
+   }
+
+
+}
