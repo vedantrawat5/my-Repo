@@ -1,1 +1,36 @@
+$main-color: #fe5b3d;
+$secondary-color: #ffac38;
+$text-color: #444;
+$gradient: linear-gradient($main-color, $secondary-color);
 
+.newsletter{
+    background: $gradient;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .box{
+        margin-top: 1rem;
+        background: #fff;
+        border-radius: 0.5rem;
+        padding: 4px 8px;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        .input{
+            border: none;
+            outline: none;
+        }
+        .btn{
+            background: #474fa0;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 0.5rem;
+        }
+
+    }
+    h2{
+        color: #fff;
+        font-size: 1.8rem;
+
+    }
+}
