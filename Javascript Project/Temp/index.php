@@ -27,7 +27,9 @@
 
     //* Comments in Php
     // This is single line comment
+
     #This is also a single line comment
+    
     /* 
     This
     is
@@ -37,9 +39,9 @@
     */
     
     //* Creating (Declaring) PHP Variables
-    // $txt ="hello world";
-    // $x = 5;
-    // $y =10.5;
+    $txt ="hello world";
+    $x = 5;
+    $y =10.5;
 
     // *Output Variables
     // $a = "Php";
