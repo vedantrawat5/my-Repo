@@ -44,22 +44,22 @@
     $y =10.5;
 
     // *Output Variables
-    // $a = "Php";
-    // echo "welcome to $a";
+    $a = "Php";
+    echo "welcome to $a";
     
     //* Adding two variables
-    // $x = 11;
-    // $y = 10;
-    // echo $x + $y;
+    $x = 11;
+    $y = 10;
+    echo $x + $y;
 
-    /*$x = 5; //*Global scope
+    $x = 5; /*Global scope*/ 
     function myTest(){
     // using x inside this function will generate an error
     $x = 6; //*Local scope
     echo "<p>variable x inside this function $x <p>";
     }
     myTest();
-    echo "<p>variable x inside this function $x <p>";*/
+    echo "<p>variable x inside this function $x <p>";
     // $x = 8;
     // $y = 7;
     // function myFunction(){
@@ -67,7 +67,7 @@
     //     $y = $x+ $y;
     // }
     // myFunction();
-    // echo $y; //Output 15
+    // echo $y;  //Output 15
 
     // $x = 5;
     // $y = 2;
