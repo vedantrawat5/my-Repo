@@ -60,12 +60,12 @@
     }
     myTest();
     echo "<p>variable x inside this function $x <p>";
-    // $x = 8;
-    // $y = 7;
-    // function myFunction(){
-    //     global $x, $y;
-    //     $y = $x+ $y;
-    // }
+    $x = 8;
+    $y = 7;
+    function myFunction(){
+        global $x, $y;
+        $y = $x+ $y;
+    }
     // myFunction();
     // echo $y;  //Output 15
 
