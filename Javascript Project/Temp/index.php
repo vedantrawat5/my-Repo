@@ -66,16 +66,16 @@
         global $x, $y;
         $y = $x+ $y;
     }
-    // myFunction();
-    // echo $y;  //Output 15
+    myFunction();
+    echo $y;  //Output 15
 
-    // $x = 5;
-    // $y = 2;
-    // function myTest(){
-    //     $GLOBALS['y'] = $GLOBALS['y'] +$GLOBALS['x']; 
-    // }
-    // myTest();
-    // echo $y; //Output 7
+    $x = 5;
+    $y = 2;
+    function myTest(){
+        $GLOBALS['y'] = $GLOBALS['y'] +$GLOBALS['x']; 
+    }
+    myTest();
+    echo $y; //Output 7
 
     // Todo: Ask doubt : Doubt cleared
     // function sayHello(){
