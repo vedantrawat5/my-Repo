@@ -78,15 +78,15 @@
     echo $y; //Output 7
 
     // Todo: Ask doubt : Doubt cleared
-    // function sayHello(){
-    //     static $x = "Hi";
-    //     echo $x;
-    //     $x++;
+    function sayHello(){
+        static $x = "Hi";
+        echo $x;
+        $x++;
 
-    //     sayHello();
-    //     sayHello();
-    //     sayHello();
-    // }
+        sayHello();
+        sayHello();
+        sayHello();
+    }
 
     // echo "<h2> Php is fun! <h2>"; 
     // echo "Hello world !<br>" ;
