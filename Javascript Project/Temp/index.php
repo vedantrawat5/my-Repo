@@ -88,10 +88,10 @@
         sayHello();
     }
 
-    // echo "<h2> Php is fun! <h2>"; 
-    // echo "Hello world !<br>" ;
-    // echo "I am about to learn !<br>" ;
-    // echo "This ","is ","multi ","string ","parameter"; 
+    echo "<h2> Php is fun! <h2>"; 
+    echo "Hello world !<br>" ;
+    echo "I am about to learn !<br>" ;
+    echo "This ","is ","multi ","string ","parameter"; 
     
     // $txt1 = "Learn php" ;
     // $txt2 = "Tech Centre"; 
