@@ -93,18 +93,18 @@
     echo "I am about to learn !<br>" ;
     echo "This ","is ","multi ","string ","parameter"; 
     
-    // $txt1 = "Learn php" ;
-    // $txt2 = "Tech Centre"; 
-    // $x = 5;
-    // $y = 4;
+    $txt1 = "Learn php" ;
+    $txt2 = "Tech Centre"; 
+    $x = 5;
+    $y = 4;
     
-    // echo "<h2>$txt1<h2>";
-    // echo "Study php at $txt2 <br>";
-    // echo "$x+$y";
+    echo "<h2>$txt1<h2>";
+    echo "Study php at $txt2 <br>";
+    echo "$x+$y";
     
-    // print "<h2> Php is fun! <h2>"; 
-    // print "Hello world !<br>" ;
-    // print "I am about to learn !<br>" ;
+    print "<h2> Php is fun! <h2>"; 
+    print "Hello world !<br>" ;
+    print "I am about to learn !<br>" ;
     
     //* Php Data Types:
     // 1. Strings
