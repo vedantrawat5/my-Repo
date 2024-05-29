@@ -108,18 +108,18 @@
     
     //* Php Data Types:
     // 1. Strings
-    // $x = "String";
-    // $y = "Another string";
+    $x = "String";
+    $y = "Another string";
 
-    // echo $x;
-    // echo $y;
+    echo $x;
+    echo $y;
 
     //* 2.Integers
-    // $a = 59889;
-    // $b = "Etta Pearson";
-    // var_dump($a);
+    $a = 59889;
+    $b = "Etta Pearson";
+    var_dump($a);
 
-    // var_dump($b);
+    var_dump($b);
     
     //* 3.Float
     // $n = 10.29647;
