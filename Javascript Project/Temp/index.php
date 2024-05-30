@@ -122,14 +122,14 @@
     var_dump($b);
     
     //* 3.Float
-    // $n = 10.29647;
-    // var_dump($n);
+    $n = 10.29647;
+    var_dump($n);
     
     //* 4.Boolean
-    // $t = true;
-    // $f = false;
-    // var_dump($t);
-    // var_dump($f);
+    $t = true;
+    $f = false;
+    var_dump($t);
+    var_dump($f);
     
     //* 5.Arrays
     // $cars = array ("Volvo","BMW","Mercedes","Toyota");
