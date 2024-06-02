@@ -132,16 +132,16 @@
     var_dump($f);
     
     //* 5.Arrays
-    // $cars = array ("Volvo","BMW","Mercedes","Toyota");
-    // var_dump($cars);
+    $cars = array ("Volvo","BMW","Mercedes","Toyota");
+    var_dump($cars);
 
     //* Php String Function
-    // echo strlen("unusual ship angle baseball stairs ");
-    // echo str_word_count("unusual ship angle baseball stairs ");
-    // echo strrev("unusual ship angle baseball stairs ");
-    // echo strpos("unusual ship angle baseball stairs ","ship");
+    echo strlen("unusual ship angle baseball stairs ");
+    echo str_word_count("unusual ship angle baseball stairs ");
+    echo strrev("unusual ship angle baseball stairs ");
+    echo strpos("unusual ship angle baseball stairs ","ship");
     // Todo: Ask doubt
-    // echo str_replace("ship", "unusual ship angle baseball stairs ", "cricket");
+    echo str_replace("ship", "unusual ship angle baseball stairs ", "cricket");
     
     //* Php Integers:
     // $x = 32781;
