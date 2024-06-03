@@ -144,20 +144,20 @@
     echo str_replace("ship", "unusual ship angle baseball stairs ", "cricket");
     
     //* Php Integers:
-    // $x = 32781;
-    // var_dump(is_int($x));
+    $x = 32781;
+    var_dump(is_int($x));
     //! This is int
-    // $y = 96.845;
-    // var_dump(is_int($y));
+    $y = 96.845;
+    var_dump(is_int($y));
     //! This is not an int
     
     //* Php Float:
-    // $z = 16.2288;
-    // var_dump(is_float($z));
+    $z = 16.2288;
+    var_dump(is_float($z));
     
     //* Php Infinity:
-    // $a = 276e1760;
-    // var_dump(is_infinite($a));
+    $a = 276e1760;
+    var_dump(is_infinite($a));
 
     //* Php Nan:
     // $n =acos(8);
