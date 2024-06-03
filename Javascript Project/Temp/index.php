@@ -164,14 +164,14 @@
     // var_dump($n);
 
     //* Php Numerical Strings:
-    // $a = 5941;
-    // var_dump(is_numeric($a));
-    // $b = 6949;
-    // var_dump(is_numeric($b));
-    // $c = 852.699 + 1000;
-    // var_dump(is_numeric($c));
-    // $d = "Hey!";
-    // var_dump(is_numeric($d));
+    $a = 5941;
+    var_dump(is_numeric($a));
+    $b = 6949;
+    var_dump(is_numeric($b));
+    $c = 852.699 + 1000;
+    var_dump(is_numeric($c));
+    $d = "Hey!";
+    var_dump(is_numeric($d));
 
     //*Php casting strings and floats to Integers:
 
