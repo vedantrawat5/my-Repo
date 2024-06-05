@@ -10,9 +10,9 @@
     <?php
     echo "hello world";
 
-    * PHP Case Sensitivity
+    // * PHP Case Sensitivity
 
-    * keywords are not sensitive
+    // * keywords are not sensitive
 
     ECHO "hello world <br>"; 
     echo "hello world <br>"; 
@@ -178,19 +178,19 @@
 
     //! Cast float to Integer:
     
-    // $i = 22897.1289;
-    // $int_cast =(int)$i;
-    // echo $int_cast;
+    $i = 22897.1289;
+    $int_cast =(int)$i;
+    echo $int_cast;
     
     //! Cast string to int:
    
-    // $h = "53128.4616";
-    // $int_cast= (int)$h;
-    // echo $int_cast;
+    $h = "53128.4616";
+    $int_cast= (int)$h;
+    echo $int_cast;
 
     //* PHP min() and max()
-    // echo (min(45,65,985,-745,-32,8557,55)); 
-    // echo (max(45,65,985,-745,-32,8557,55)); 
+    echo (min(45,65,985,-745,-32,8557,55)); 
+    echo (max(45,65,985,-745,-32,8557,55)); 
 
     //* PHP abs()
     // echo (abs(-47.014));
