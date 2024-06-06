@@ -193,31 +193,31 @@
     echo (max(45,65,985,-745,-32,8557,55)); 
 
     //* PHP abs()
-    // echo (abs(-47.014));
+    echo (abs(-47.014));
 
     //*Php sqrt()
-    // echo (sqrt(81));
+    echo (sqrt(81));
 
     //*PHP round()
-    // echo (round(0.6049));
-    // echo (round(0.16274));
+    echo (round(0.6049));
+    echo (round(0.16274));
     
     //* Random Numbers 
-    // echo (rand(100000, 999999));
+    echo (rand(100000, 999999));
     //! Set Range:(min,max)
     
     //*PHP Operators:
 
     //* 1• Arithmetic operators
-        // $x=10;
-        // $y=6;
+        $x=10;
+        $y=6;
 
-        // echo $x + $y;
-        // echo $x - $y;
-        // echo $x * $y;
-        // echo $x / $y;
-        // echo $x % $y;
-        // echo $y ** $x;
+        echo $x + $y;
+        echo $x - $y;
+        echo $x * $y;
+        echo $x / $y;
+        echo $x % $y;
+        echo $y ** $x;
         
     //* 2• Assignment operators 
         /*$a =2;
