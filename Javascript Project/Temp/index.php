@@ -220,7 +220,7 @@
         echo $y ** $x;
         
     //* 2• Assignment operators 
-        /*$a =2;
+        $a =2;
         echo $a;
         $b=20;
         $b +=100;
@@ -236,7 +236,7 @@
         echo $e;
         $f = 15; 
         $f %=4;
-        echo $f;*/
+        echo $f;
     
     //* 3• Comparison operators 
     
