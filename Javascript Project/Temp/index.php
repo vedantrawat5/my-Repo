@@ -239,7 +239,7 @@
         echo $f;
     
     //* 3• Comparison operators 
-    
+    // NO new content to be inserted here !!
     
     //* 4• Increment/Decrement operators 
     
