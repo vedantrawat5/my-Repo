@@ -8,15 +8,15 @@
 <body>
     <h3>My first php page.</h3>
     <?php
-    // echo "hello world";
+    echo "hello world";
 
     //* PHP Case Sensitivity
     
     //* keywords are not sensitive
 
-    // ECHO "hello world <br>"; 
-    // echo "hello world <br>"; 
-    // Echo "hello world <br>";
+    ECHO "hello world <br>"; 
+    echo "hello world <br>"; 
+    Echo "hello world <br>";
 
     //* Variables are case sensitive.
 
